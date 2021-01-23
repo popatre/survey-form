@@ -17,51 +17,77 @@
         </div>
 
           <form id ="survey-form">
-            <fieldset class="flexform">
+            <fieldset>
+               <ul class="flexform">
 
+                <li>
+                   <label for="name" id=name-label> Name:</label>
+                   <input type="text" id="name" required placeholder="Full name"<br>
+                </li>
+                <li>
+                   <label for="email" id="email-label">Email:</label>
+                   <input type="email" id="email" required  placeholder="Please enter your email"<br>
+                </li>
+                <li>
+                   <label for="number" id="number-label">Phone Number:</label>
+                    <input type="number" id="number" name="number" placeholder="Enter your phone number" min="070000000000" max="079999999999">
+                </li>
+                <li>
+                       <label>Dropdown</label>
+                       <select id = "dropdown">
+                        <option value = "1">one</option>
+                        <option value = "2">two</option>
+                        <option value = "3">three</option>
+                        <option value = "4">four</option>
+                       </select>
+                </li>
+                         <!--radio buttons-->
+                   <li>
+                     <p> radio buttons </p>
+                     <ul class="flex-inner1">
+                        <li>
+                         <label for="buttonone">
+                         <input id="buttonone" type="radio" name="radio-group" value="one">one </label>
+                       </li>
+                       <li>
+                         <label for="buttontwo">
+                         <input id="buttontwo" type="radio" name="radio-group" value="two"> two   </label>
+                       </li>
+                       <li>
+                         <label for="buttonthree">
+                         <input id="buttonthree" type="radio" name="radio-group" value="three"> three </label>
+                       </li>
+                    </ul>
+                  </li>
 
-            <label for="name" id=name-label> Name:</label><br>
-            <input type="text" id="name" required placeholder="Full name"<br>
+                  <li>
+                    <p> checkboxes</p>
+                      <ul class="flex-inner2">
 
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" required  placeholder="Please enter your email"<br>
+                        <li>
+                      <!--checkbox buttons-->
+                       <label for="buttonone">
+                       <input id="checkone" type="checkbox" name="checkbox-group" value="checkone">check one </label>
+                     </li>
+                     <li>
+                       <label for="buttontwo">
+                       <input id="checktwo" type="checkbox" name="checkbox-group" value="checktwo">check two   </label>
+                     </li>
+                     <li>
+                       <label for="buttonthree">
+                      <input id="checkthree" type="checkbox" name="checkbox-group" value="checkthree">check three </label>
+                    </li>
+                    </ul>
+                 </li>
 
-            <label for="number" id="number-label">Phone Number:</label>
-            <input type="number" id="number" name="number" placeholder="Enter your phone number" min="070000000000" max="079999999999">
-
-            <label>Dropdown</label>
-             <select id = "dropdown">
-             <option value = "1">one</option>
-             <option value = "2">two</option>
-             <option value = "3">three</option>
-             <option value = "4">four</option>
-             </select>
-
-             <!--radio buttons-->
-
-             <label for="buttonone">
-             <input id="buttonone" type="radio" name="radio-group" value="one">Button one </label>
-
-             <label for="buttontwo">
-             <input id="buttontwo" type="radio" name="radio-group" value="two">Button two   </label>
-
-             <label for="buttonthree">
-             <input id="buttonthree" type="radio" name="radio-group" value="three">Button three </label>
-
-         <!--checkbox buttons-->
-             <label for="buttonone">
-             <input id="checkone" type="checkbox" name="checkbox-group" value="checkone">checkbox one </label>
-
-             <label for="buttontwo">
-             <input id="checktwo" type="checkbox" name="checkbox-group" value="checktwo">checkbox two   </label>
-
-             <label for="buttonthree">
-             <input id="checkthree" type="checkbox" name="checkbox-group" value="checkthree">checkbox three </label>
-
-
-             <textarea id="commentbox" name="commentbox" rows="4" cols="50" placeholder="Please enter any additional comments here"></textarea>
-
-             <button type="submit" id="submit">Submit</button>
+                 <li>
+                    <textarea id="commentbox" name="commentbox" rows="4" cols="50" placeholder="Please enter any additional comments here"></textarea>
+                 </li>
+                 <li>
+                  <button type="submit" id="submit">Submit</button>
+                </li>
+           </ul>
+           </fieldset>
         </form>
 
 

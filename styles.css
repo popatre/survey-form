@@ -1,18 +1,18 @@
 
 
-
-
-
-
-
 #grid {
   display: grid;
   height: 70vw;
   width: 100vw;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 2% 15% 4% auto auto auto;
-  background-color: orange;
 
+}
+
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #3AAFAB;
+  color: #fff;
 }
 
 
@@ -20,7 +20,9 @@
 
    grid-row: 4/5;
   grid-column: 2/3;
-  background-color: brown;
+  background-color: #f55d65;
+  border-radius: 30px;
+  border-width: 1px;
 
 
 }
@@ -29,15 +31,83 @@
 
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: pink;
+  background-color: #f55d65;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border-width: 1px;
 
 }
 
-.flexform {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+.flexform li, .flex-inner1, .flex-inner2 {
+   display: flex;
+   flex-wrap: wrap;
+   align-items:center;
+
+
 }
+
+.flexform > li > label,
+.flexform li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+  margin-bottom: 20px;
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.flexform li input:not([type='checkbox']),
+.flexform li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flexform li select {
+  padding: 15px;
+  border: none;
+}
+
+
+.flexform > li > label + *,
+.flex-inner1, .flex-inner2 {
+  flex: 1 0 220px;
+}
+
+.flexform li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flexform li button:hover {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner1 li, .flex-inner2 li {
+  width: 100px;
+}
+
+
+.flex-inner1, .flex-inner2 {
+  justify-content: space-around;
+
+}
+
+
 
 .flex {
     display:flex;
@@ -51,12 +121,13 @@
   color: white;
   border-width: 10px 10px 10px 10px;
   border-color: black;
-  border-style: dashed;
-  padding: 5px 5px 5px 5px;
+  border-style:double;
+  border-color: inherit;
+  padding: 5px 10px 5px 10px;
 
 }
 
-#description {
+ #description {
   display: flex;
   justify-content:center;
   color: white;
@@ -64,5 +135,11 @@
   font-family: fantasy;
   font-weight: bold;
 
-
 }
+
+fieldset {
+    border: 0;
+}
+
+
+<!-- tutorial - https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 -->
