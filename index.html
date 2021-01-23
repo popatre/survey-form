@@ -8,47 +8,66 @@
 
     <body>
 
-         <h1 id ="title"> ADHD Survey feedback </h1>
+     <div id="grid">
+
+          <div class="titlecont">
+            <div class="flex">
+         <h1 id="title"> ADHD Survey feedback </h1> </div>
           <p id="description"> Thank you for taking the time to complete the form </p>
+        </div>
+
+          <form id ="survey-form">
+            <fieldset class="flexform">
 
 
-            <form id ="survey-form">
-              <fieldset>
+            <label for="name" id=name-label> Name:</label><br>
+            <input type="text" id="name" required placeholder="Full name"<br>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" required  placeholder="Please enter your email"<br>
+
+            <label for="number" id="number-label">Phone Number:</label>
+            <input type="number" id="number" name="number" placeholder="Enter your phone number" min="070000000000" max="079999999999">
+
+            <label>Dropdown</label>
+             <select id = "dropdown">
+             <option value = "1">one</option>
+             <option value = "2">two</option>
+             <option value = "3">three</option>
+             <option value = "4">four</option>
+             </select>
+
+             <!--radio buttons-->
+
+             <label for="buttonone">
+             <input id="buttonone" type="radio" name="radio-group" value="one">Button one </label>
+
+             <label for="buttontwo">
+             <input id="buttontwo" type="radio" name="radio-group" value="two">Button two   </label>
+
+             <label for="buttonthree">
+             <input id="buttonthree" type="radio" name="radio-group" value="three">Button three </label>
+
+         <!--checkbox buttons-->
+             <label for="buttonone">
+             <input id="checkone" type="checkbox" name="checkbox-group" value="checkone">checkbox one </label>
+
+             <label for="buttontwo">
+             <input id="checktwo" type="checkbox" name="checkbox-group" value="checktwo">checkbox two   </label>
+
+             <label for="buttonthree">
+             <input id="checkthree" type="checkbox" name="checkbox-group" value="checkthree">checkbox three </label>
 
 
-              <label for="name" id=name-label> Name:</label><br>
-              <input type="text" id="name" required placeholder="Full name"<br>
+             <textarea id="commentbox" name="commentbox" rows="4" cols="50" placeholder="Please enter any additional comments here"></textarea>
 
-              <label for="email" id="email-label">Email:</label>
-              <input type="email" id="email" required  placeholder="Please enter your email"<br>
-
-              <label for="number" id="number-label">Phone Number:</label>
-              <input type="number" id="number" name="number" placeholder="Enter your phone number" min="070000000000" max="079999999999">
-
-              <label>Dropdown</label>
-               <select id = "dropdown">
-               <option value = "1">one</option>
-               <option value = "2">two</option>
-               <option value = "3">three</option>
-               <option value = "4">four</option>
-               </select>
+             <button type="submit" id="submit">Submit</button>
+        </form>
 
 
-            </fieldset>
-            </form>
+      </div>
 
-
-
-
-
-    </body>
-
-
-
-
-
-
-
+</body>
 
 <footer>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

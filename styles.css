@@ -1,4 +1,68 @@
-<style>
 
 
-</style>
+
+
+
+
+
+#grid {
+  display: grid;
+  height: 70vw;
+  width: 100vw;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 2% 15% 4% auto auto auto;
+  background-color: orange;
+
+}
+
+
+#survey-form {
+
+   grid-row: 4/5;
+  grid-column: 2/3;
+  background-color: brown;
+
+
+}
+
+.titlecont {
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: pink;
+
+}
+
+.flexform {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.flex {
+    display:flex;
+    justify-content: center;
+
+}
+
+.flex #title {
+
+
+  color: white;
+  border-width: 10px 10px 10px 10px;
+  border-color: black;
+  border-style: dashed;
+  padding: 5px 5px 5px 5px;
+
+}
+
+#description {
+  display: flex;
+  justify-content:center;
+  color: white;
+
+  font-family: fantasy;
+  font-weight: bold;
+
+
+}
